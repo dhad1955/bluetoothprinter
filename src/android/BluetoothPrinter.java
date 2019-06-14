@@ -163,7 +163,7 @@ public class BluetoothPrinter extends CordovaPlugin {
         else if (action.equals("print")) {
 			try {
 				String msg = args.getString(0);
-				printText(callbackContext, msg);
+				printText(callbackContext, "bb1");
 			} catch (IOException e) {
 				Log.e(LOG_TAG, e.getMessage());
 				e.printStackTrace();
